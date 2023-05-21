@@ -10,7 +10,35 @@ function App() {
     codeUrl: "unity/Build/Build.wasm",
   });
 
-  return <Unity unityProvider={unityProvider} />;
+  return(
+    <div>
+      <Unity
+        style={{
+          width: "80%",
+          height: "fit-content",
+          justifySelf: "center",
+          alignSelf: "center",
+        }}
+        unityProvider={unityProvider}
+      />
+    </div>
+  );
 }
 
 export default App;
+
+/*
+return(
+  <div>
+    <Unity
+      style={{
+        width: "80%",
+        justifySelf: "center",
+        alignSelf: "center",
+      }}
+      unityProvider={unityProvider}
+    />
+  </div>
+);
+
+*/
