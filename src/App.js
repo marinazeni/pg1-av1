@@ -4,17 +4,19 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "unity/Build/Build.loader.js",
-    dataUrl: "unity/Build/Build.data",
-    frameworkUrl: "unity/Build/Build.framework.js",
-    codeUrl: "unity/Build/Build.wasm",
+    loaderUrl: "unity/Build/buildtemp.loader.js",
+    dataUrl: "unity/Build/buildtemp.data",
+    frameworkUrl: "unity/Build/buildtemp.framework.js",
+    codeUrl: "unity/Build/buildtemp.wasm",
+    streamingAssetsUrl: "unity/StreamingAssets"
   });
 
   return(
     <div>
+      <h3>oioioi</h3>
       <Unity
         style={{
-          width: "80%",
+          width: "90%",
           height: "fit-content",
           justifySelf: "center",
           alignSelf: "center",
