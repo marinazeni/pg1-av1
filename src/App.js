@@ -21,7 +21,8 @@ function App() {
       {isMobile ? (
         <Unity
           style={{
-            width: "80%",
+            width: "fit-content",
+            height: "80%",
             justifySelf: "center",
             alignSelf: "center",
           }}
@@ -30,8 +31,8 @@ function App() {
       ) : (
         <Unity
           style={{
-            width: "fit-content",
-            height: "80%",
+            width: "80%",
+            height: "fit-content",
             justifySelf: "center",
             alignSelf: "center",
           }}
